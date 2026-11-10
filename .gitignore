@@ -1,0 +1,46 @@
+# --- Noyau WordPress : installé en local, jamais versionné ---
+/wp-admin/
+/wp-includes/
+/index.php
+/license.txt
+/readme.html
+/xmlrpc.php
+/wp-*.php
+
+# --- Configuration locale et secrets ---
+/wp-config.php
+.env
+!.env.example
+
+# --- Contenu généré ou envoyé par les utilisateurs ---
+/wp-content/uploads/
+/wp-content/upgrade/
+/wp-content/cache/
+/wp-content/backup-db/
+/wp-content/advanced-cache.php
+/wp-content/wp-cache-config.php
+/wp-content/debug.log
+/wp-content/index.php
+
+# --- On ne versionne que notre thème et notre extension ---
+/wp-content/plugins/*
+!/wp-content/plugins/mqb-features/
+/wp-content/themes/*
+!/wp-content/themes/mqb-theme/
+
+# --- Dépendances et builds ---
+node_modules/
+vendor/
+dist/
+*.log
+
+# --- Bases de données : elles contiennent des données personnelles ---
+*.sql
+*.sql.gz
+
+# --- Fichiers du système et des éditeurs ---
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp
